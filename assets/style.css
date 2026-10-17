@@ -1,0 +1,28 @@
+:root{color-scheme:dark;font-family:'DM Sans',system-ui,sans-serif;background:#0a1220;color:#e7edf5}*{box-sizing:border-box}body{margin:0}.shell{max-width:1600px;margin:auto;padding:40px}.eyebrow{font-size:11px;letter-spacing:2.5px;color:#39c9ae;font-weight:700}h1{font-size:46px;letter-spacing:-1.8px;margin:12px 0}header p{color:#94a3b8;margin-bottom:30px}.workspace{display:grid;grid-template-columns:285px minmax(0,1fr);gap:22px}aside,main{background:#111c2c;border:1px solid #223148;border-radius:16px;padding:24px}aside{align-self:start}h3{margin:0 0 20px;font-size:17px}label{display:block;margin-bottom:19px;font-size:13px}label>span{display:block;color:#a5b5ca;margin-bottom:8px}input[type=number]{width:100%;background:#0a1423;border:1px solid #34455f;border-radius:6px;color:white;padding:10px;font-size:14px}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}input[type=checkbox]{accent-color:#28c6a4;margin-right:9px}label label{margin:12px 0;color:#e1e8f3}button{cursor:pointer;border:1px solid #3c516d;background:#192a40;color:#e7edf5;border-radius:7px;padding:11px 16px;font-weight:600}button:hover{background:#28425f}.primary{width:100%;background:#28c6a4;color:#062b27;border:0;margin:15px 0}hr{border:0;border-top:1px solid #2a3b51;margin:24px 0}p{font-size:13px;line-height:1.65}.muted{color:#94a3b8;font-size:12px}summary{font-size:13px;cursor:pointer;margin-bottom:15px}.panel-title{display:flex;justify-content:space-between;align-items:center}.panel-title h3{margin:0}.badge{color:#94a3b8;font-size:12px;border:1px solid #34455f;padding:6px 10px;border-radius:20px}.transport{display:flex;gap:10px;margin-bottom:22px;flex-wrap:wrap}.charts{display:grid;grid-template-columns:1fr 1fr;margin-top:15px}table{border-collapse:collapse;width:100%;font-size:12px}th,td{text-align:left;padding:12px 8px;border-bottom:1px solid #293950}th{color:#94a3b8;font-weight:500}#results{overflow-x:auto}#error{color:#ff9c90;font-size:13px}.Select-control,.Select-menu-outer{background:#142239!important;color:#e7edf5!important}.Select-value-label{color:#e7edf5!important}@media(max-width:1000px){.workspace{grid-template-columns:1fr}.charts{grid-template-columns:1fr}.shell{padding:18px}h1{font-size:34px}}
+/* Dash 4 dropdowns use dash-dropdown classes rather than React Select classes. */
+:root {
+  --Dash-Fill-Inverse-Strong: #142239;
+  --Dash-Fill-Interactive-Weak: #24435c;
+  --Dash-Fill-Interactive-Strong: #28c6a4;
+  --Dash-Fill-Disabled: #293950;
+  --Dash-Stroke-Strong: #34455f;
+  --Dash-Text-Strong: #e7edf5;
+  --Dash-Text-Primary: #e7edf5;
+  --Dash-Text-Disabled: #94a3b8;
+}
+.dash-dropdown, .dash-dropdown-content, .dash-dropdown-search-container {
+  background: #142239 !important;
+  color: #e7edf5 !important;
+  border-color: #34455f !important;
+}
+.dash-dropdown-value, .dash-dropdown-search, .dash-dropdown-option {
+  color: #e7edf5 !important;
+}
+.dash-dropdown-search { background: #142239 !important; }
+.dash-dropdown-option:hover, .dash-dropdown-option:focus-within,
+.dash-options-list-option[data-highlighted], .dash-options-list-option[aria-selected='true'] {
+  background: #24435c !important;
+  color: #fff !important;
+}
+
+.danger{border-color:#a94b55;color:#ffb2b8;width:100%}.danger:hover{background:#512935}#shutdown-status{font-size:13px;color:#ffb2b8;margin-top:12px;line-height:1.6}
