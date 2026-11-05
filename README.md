@@ -5,10 +5,10 @@ A local Dash application comparing gradient descent, safeguarded Newton, BFGS, t
 
 ## Run
 
-With Python 3.11 or newer:
+Use Python 3.15 and the project-local `.venv`:
 
 ```powershell
-python -m venv .venv
+py -3.15 -m venv .venv
 .\.venv\Scripts\python -m pip install -r requirements.txt
 .\.venv\Scripts\python app.py
 ```
@@ -73,13 +73,18 @@ project folder (or run `python app.py` in your configured environment).
 ## Verify
 
 ```powershell
-python -m unittest -v
+.\.venv\Scripts\python.exe -m unittest -v
 ```
 
 Tests check analytic derivatives against central differences, convergence from
 three starting points, monotone descent, stationary starts and iteration limits.
 The numerical core in `optimization.py` only depends on NumPy; the interface lives
-in `app.py`. Downloaded project-local packages in `.packages` are ignored by Git.
+in `app.py`. All dependencies are installed in `.venv`; the legacy `.packages`
+directory is ignored by Git and is no longer added to Python's import path.
+After changing Python versions, recreate `.venv` or reinstall the requirements
+with compatible wheels; compiled packages from Python 3.12 cannot run on 3.15.
+In VS Code select `.venv/Scripts/python.exe` as the interpreter. Run the app
+directly with `.\.venv\Scripts\python.exe app.py` if PowerShell blocks `run.ps1`.
 
 ## BFGS comparison
 

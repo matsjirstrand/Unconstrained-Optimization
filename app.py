@@ -1,7 +1,4 @@
 """Run with python app.py, then open http://127.0.0.1:8050."""
-import sys
-from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent / '.packages'))
 import csv
 import io
 import os
